@@ -396,7 +396,7 @@ let allDivElements = document.querySelectorAll("div");
 And so on.
 
 If you'd want to access f.e. the 3rd paragraph in the <em>Example 1</em> list, you'd do this as such:
-```
+```javascript
 x = allParagraphElements[2];
 ```
 <em><sub>! Keep in mind that such as with arrays, you start counting from 0 and <b>not</b> from 1. Hence, the 3rd item here would be connected to the number 2.
