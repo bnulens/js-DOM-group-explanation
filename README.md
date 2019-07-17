@@ -16,7 +16,7 @@ In the image above, we can see the representational tree and how it is created b
 1. **Document**: It treats all the HTML documents.
 2. **Elements**: All the tags that are inside your HTML or XML turn into a DOM element.
 3. **Text**: All the tags’ content.
-4. **Attributes**: All the attributes from a specific HTML element. In the image, the attribute class=”hero” is an attribute from the <p> element.
+4. **Attributes**: All the attributes from a specific HTML element. In the image, the attribute class=”hero” is an attribute from the `<p>` element.
 
 By manipulating the DOM, you have infinite possibilities. You can create applications that update the data of the page without needing a refresh. Also, you can create applications that are customizable by the user and then change the layout of the page without a refresh. You can drag, move, and delete elements.
 
