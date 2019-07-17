@@ -114,7 +114,8 @@ Dynamic changes can be made with:
         to change the **content** of an element, but beware. Any HTML inside the selected element will be overwritten ! 
 - you can change the `attribute` of an element by selecting it and overwriting it's property.
 
-     ```<!DOCTYPE html>
+     ```javascript
+    <!DOCTYPE html>
     <html>
          <body>
 
@@ -133,7 +134,7 @@ Dynamic changes can be made with:
 ## DOM CSS
 The DOM lets Javascript change the style of HTML elements.
 
-```
+```javascript
 <html>
     <body>
 
@@ -299,33 +300,34 @@ Alternatively, you can use the `previousElementSibling` and `nextElementSibling`
 <b>"Node"</b> stands for <em>'HTML element'.</em>  
 <em>Important:</em> To use a node, once it's been created, you must refer to an existing HTML element in order to link it to an existing location in the HTML itself.  
  
-In the following steps we will add a <em>line of text</em> in JS to an existing HTML div:
-- Step 1, we first will have to create a <em>< p >paragraph< /p ></em> for our <em>text</em> to be nested in. 
+In the following steps we will add a <em>line of text</em> in JS to an existing HTML `<div>`:
+- Step 1, we first will have to create a `<p>paragraph</p>` for our <em>text</em> to be nested in. 
 - Step 2, will be the creation of the <em>text</em> itself.
-- Step 3, after this we will link the <em>text</em> to our earlier created <em>< p >paragraph< /p ></em>.
-- Step 4, is needed to refer to an existing <em>< div >HTML element< /div ></em> which we will need to place our earlier created <em>text</em> into.
-- Step 5, finally, we will link our <em>< p >paragraph< / p ></em>-wrapped<em> text</em> into our desired < div >HTML element< /div > which we appointed in "Step 4".
-#### Step 1,  creating an element (< p >):   
-```
+- Step 3, after this we will link the <em>text</em> to our earlier created `<p>paragraph</p>`.
+- Step 4, is needed to refer to an existing `<div>HTML element</div>` which we will need to place our earlier created <em>text</em> into.
+- Step 5, finally, we will link our `<p>paragraph</p>`-wrapped <em>text</em> into our desired `<div>HTML element</div>` which we appointed in "Step 4".
+ 
+#### Step 1,  creating a `<p>` element:   
+```javascript
 let ourParagraph = document.createElement("p");
 ```
 
 #### Step 2, creating our content <em>(text)</em>:
-```
+```javascript
 let ourText = document.createTextNode("This is text that will go into our paragraph.");
 ```
 
-#### Step 3,  linking our content (text) to our element (< p >):
-```
+#### Step 3,  linking our content (text) to our `<p>` element:
+```javascript
 ourParagraph.appendChild(node);
 ```
 
-#### Step 4,  referring to an existing HTML element (< div >):
-```
+#### Step 4,  referring to an existing HTML `<div>` element:
+```javascript
 let ourDesiredHTMLElement = document.getElementById("IdOfOurDiv");
 ```
 #### Step 5, linking our created content (text) and element (< p >) to the already existing HTML element (< div >) referred to in Step 4:
-```
+```javascript
 ourDesiredHTMLElement.appendChild(ourParagraph);
 ```
 ---
@@ -333,7 +335,7 @@ ourDesiredHTMLElement.appendChild(ourParagraph);
 ### Deleting an existing HTML element.
 <em>Important:</em> to remove an element, you need to know and refer to the parent of said element.  
 
-<em>In the following example we will delete the HTML element with id="ourChildParagraph".</em>
+<em>In the following example we will delete the HTML element with</em> `id="ourChildParagraph"`.
 
 <b> HTML sample: </b>
 ```
@@ -346,17 +348,17 @@ ourDesiredHTMLElement.appendChild(ourParagraph);
 - Step 3, lastly we remove the child from its parent.
 
 #### Step 1,  addressing the parent element:   
-```
+```javascript
 let ourParentElement = document.getElementById("ourParentDiv");
 ```
 
 #### Step 2, addressing the child element we want to remove:
-```
+```javascript
 let ourChildElement = document.getElementById("ourChildParagraph");
 ```
 
 #### Step 3, finally, we remove the child element:
-```
+```javascript
 ourParentElement.removeChild(ourChildElement);
 ```
 ---
@@ -364,33 +366,33 @@ ourParentElement.removeChild(ourChildElement);
 
 <em><b>An 'HTML collection' is a list (a collection) of HTML elements.</b></em>
 
-<b>Example 1:</b> To select all <em>< p >paragraph< /p ></em> elements in an HTML file you can use the following line of code:
-```
+<b>Example 1:</b> To select all `<p>paragraph</p>` elements in an HTML file you can use the following line of code:
+```javascript
 let allParagraphElements = document.getElementsByTagName("p");
 ```
-<b>Example 2:</b> Similarly, if you'd want to select all <em>< div > DIV < /div ></em> elements in an HTML file you can use the code as such:
-```
+<b>Example 2:</b> Similarly, if you'd want to select all `<div>DIV</div>` elements in an HTML file you can use the code as such:
+```javascript
 let allDivElements = document.getElementsByTagName("div");
 ```
 And so on.
 
 If you'd want to access f.e. the 3rd paragraph in the <em>Example 1</em> collection, you'd do this as such:
-```
+```javascript
 x = allParagraphElements[2];
 ```
 <em><sub>! Keep in mind that such as with arrays, you start counting from 0 and <b>not</b> from 1. Hence, the 3rd item here would be connected to the number 2.
-Also note that HTML collections are <b>NOT</b> arrays. They're mere lists but cannot be edited such as arrays can with f.e. push(), join(), pop(), etc. !</sub></em>
+Also note that HTML collections are <b>NOT</b> arrays. They're mere lists but cannot be edited such as arrays can with f.e. `push()`, `join()`, `pop()`, etc. !</sub></em>
 
 ---
 ## Nodes: Node lists
 <em><b>A 'Node list' is a list (a collection) of nodes that are taken from a document.</b></em>
 
-<b>Example 1:</b> To select all <em>< p >paragraph< /p ></em> elements in a document you can use the following line of code:
-```
+<b>Example 1:</b> To select all `<p>paragraph</p>` elements in a document you can use the following line of code:
+```javascript
 let allParagraphElements = document.querySelectorAll("p");
 ```
-<b>Example 2:</b> Similarly, if you'd want to select all <em>< div > DIV < /div ></em> elements in a document you can use the code as such:
-```
+<b>Example 2:</b> Similarly, if you'd want to select all `<div>DIV</div>` elements in a document you can use the code as such:
+```javascript
 let allDivElements = document.querySelectorAll("div");
 ```
 And so on.
