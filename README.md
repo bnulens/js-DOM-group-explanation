@@ -45,14 +45,14 @@ If we would like to manipulate HTML elements, first we have to **find** them by:
 
   * ## by ID
     Most straightforward way of selecting elements inside the DOM.   
-    Using the HTML 'ID' tag.
+    Using the HTML 'ID'.
 
     >`var x = document.getElementById("element");`
 
     Returns an **object**, if not found it returns `null`.  
 
     ID's have to be ***unique*** however, because of the multiple features the 'ID'  
-    tag has within the document:  
+    has within the document:  
     -  As a style sheet selector.  
     -  As a target anchor for hypertext links.  
     -  As a means to reference a particular element from a script.  
