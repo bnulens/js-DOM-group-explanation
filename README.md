@@ -29,7 +29,7 @@ The programming interface is the properties and methods of each object.
 A **property** is a value that you can get or set (like changing the content of an HTML element).
 A **method** is an action you can do (like add or deleting an HTML element).
 
-The DOM has a lot of methods. They are the connection between our nodes (elements) and events. We are going to go over a few of the most important methods. If you want to read about all of the methods click [here]([https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)).
+The DOM has a lot of methods. They are the connection between our nodes (elements) and events. We are going to go over a few of the most important methods. If you want to read about all of the methods click [here](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction).
 
 ---
 #### Brecht
@@ -100,7 +100,7 @@ If we would like to manipulate HTML elements, first we have to **find** them by:
     An HTMLCollection object is an array-like list of HTML elements.  
 
 
-[A list of methods and properties you can use within the DOM to select elements]([https://www.w3schools.com/jsref/dom_obj_all.asp](https://www.w3schools.com/jsref/dom_obj_all.asp))  
+[A list of methods and properties you can use within the DOM to select elements](https://www.w3schools.com/jsref/dom_obj_all.asp)  
 
 ## HTML DOM
 
@@ -159,7 +159,7 @@ You can even use `events` to change HTML elements when:
 - Input fields are changed.  
   (`onchange`)
 
-[Basic DOM exercises from W3schools, check these out !]([https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_dom_html1](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_dom_html1))
+[Basic DOM exercises from W3schools, check these out !](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_dom_html1)
 
 ---
 #### Birthe
@@ -181,7 +181,7 @@ touchstart, touchmove, touchend, touchcancel.
   
 * Keyboard events (KeyboardEvent):  
 keydown, keypress, keyup.  
--[example]([https://birthelambrechts.github.io/extra-s/1.drumkit/drum.html](https://birthelambrechts.github.io/extra-s/1.drumkit/drum.html))  
+-[example](https://birthelambrechts.github.io/extra-s/1.drumkit/drum.html)
   
 * Form events:  
 focus, blur, change, submit.  
@@ -208,7 +208,7 @@ With the HTML DOM, you can navigate the node tree using node relationships.
 Everything in an HTML document is a node.  
 New nodes can be created, and all nodes can be modified or deleted.  
   
-![alt text]([https://www.w3schools.com/js/pic_htmltree.gif](https://www.w3schools.com/js/pic_htmltree.gif) "Logo Title Text 1")  
+![alt text](https://www.w3schools.com/js/pic_htmltree.gif)
   
 Navigate up, down, and sideways in the DOM tree using JavaScript to access a child, parent or sibling element.  
   
@@ -291,7 +291,7 @@ alert(title.nextElementSibling.textContent); // Outputs: This is some text.
 ```  
 Alternatively, you can use the `previousElementSibling` and `nextElementSibling` to get the previous and next sibling element skipping any whitespace text nodes. All these properties returns `null` if there is no such sibling.  
   
-[Great tutorial learning the navigation and accessing the DOM-elements]([https://www.digitalocean.com/community/tutorials/how-to-traverse-the-dom](https://www.digitalocean.com/community/tutorials/how-to-traverse-the-dom))
+[Great tutorial learning the navigation and accessing the DOM-elements](https://www.digitalocean.com/community/tutorials/how-to-traverse-the-dom)
 
 ---
 #### Jal 
