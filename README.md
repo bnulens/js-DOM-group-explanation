@@ -400,6 +400,6 @@ If you'd want to access f.e. the 3rd paragraph in the <em>Example 1</em> list, y
 x = allParagraphElements[2];
 ```
 <em><sub>! Keep in mind that such as with arrays, you start counting from 0 and <b>not</b> from 1. Hence, the 3rd item here would be connected to the number 2.
-Also note that Node lists are <b>NOT</b> arrays. They're mere lists but cannot be edited such as arrays can with f.e. push(), join(), pop(), etc. !</sub></em>
+Also note that Node lists are <b>NOT</b> arrays. They're mere lists but cannot be edited such as arrays can with f.e. `push()`, `join()`, `pop()`, etc. !</sub></em>
 
 ---
