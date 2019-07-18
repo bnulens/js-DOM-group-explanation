@@ -94,7 +94,7 @@ If we would like to manipulate HTML elements, first we have to **find** them by:
 
     >`var x = document.querySelectorAll("p.intro");`
 
-    (selecting all the `p` within the `class` "intro")
+    (selecting all the `p` with `class` "intro")
 
   * ## by HTML Object Collection 
     An HTMLCollection object is an array-like list of HTML elements.  
