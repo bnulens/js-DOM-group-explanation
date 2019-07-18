@@ -319,7 +319,7 @@ let ourText = document.createTextNode("This is text that will go into our paragr
 
 #### Step 3,  linking our content (text) to our `<p>` element:
 ```javascript
-ourParagraph.appendChild(node);
+ourParagraph.appendChild(ourText);
 ```
 
 #### Step 4,  referring to an existing HTML `<div>` element:
